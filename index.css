@@ -1,0 +1,10 @@
+*{
+    text-decoration: none;
+    background-color: #EEEDEB;
+    color: #2F3645;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
