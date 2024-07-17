@@ -20,12 +20,17 @@
       </form>
       <script>
         function msg() {
-          nome = prompt("Insira o nome: ");
-          idade = parseInt(prompt("Insira a idade: "));
-          work = prompt("Insira a profissão: ");
-          alert(
-            `Bem vindo, ${nome}! Você tem ${idade} anos e sua profissão é ${work}.`
-          );
+          let teste = [];
+          for (let i = 0; i < 4; i++) {
+            this.nome = prompt("Insira o nome: ");
+            this.idade = parseInt(prompt("Insira a idade: "));
+            this.work = prompt("Insira a profissão: ");
+            alert(
+              `Bem vindo, ${nome}! Você tem ${idade} anos e sua profissão é ${work}.`
+            );
+            teste.push([nome, idade, work]);
+          }
+          console.log(teste);
         }
       </script>
       <section>
