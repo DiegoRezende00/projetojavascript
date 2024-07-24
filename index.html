@@ -18,21 +18,9 @@
       <form>
         <input type="button" value="Clique Aqui" onclick="msg()" />
       </form>
-      <script>
-        function msg() {
-          let teste = [];
-          for (let i = 0; i < 4; i++) {
-            this.nome = prompt("Insira o nome: ");
-            this.idade = parseInt(prompt("Insira a idade: "));
-            this.work = prompt("Insira a profissão: ");
-            alert(
-              `Bem vindo, ${nome}! Você tem ${idade} anos e sua profissão é ${work}.`
-            );
-            teste.push([nome, idade, work]);
-          }
-          console.log(teste);
-        }
-      </script>
+      <form>
+        <input type="button" value="Cadastre-se" onclick="cadastro()" />
+      </form>
       <section>
         <div>
           Primeiro número
@@ -44,13 +32,6 @@
         </div>
         <input id="resultado" type="text" />
       </section>
-      <script>
-        function calculo() {
-          let valor1 = parseInt(document.getElementById("primeiro").value);
-          let valor2 = parseInt(document.getElementById("segundo").value);
-          document.getElementById("resultado").value = valor1 + valor2;
-        }
-      </script>
     </main>
     <footer></footer>
     <script src="index.js"></script>
