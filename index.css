@@ -1,13 +1,50 @@
+/* Configuração base da pagina */
 *{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none;
     text-decoration: none;
-    list-style-type: none;
-    background-color: #2F3645 ;
-    color: #EEEDEB;
 }
-.container-fluid{
+/* Layout do header da página */
+.navbar-brand{
+    color: #E6B9A6;
+}
+.container-header{
     display: grid;
     grid-template-areas: "navbar-brand d-flex";
+    background-color: #2F3645;
+    color: #E6B9A6;
 }
+.d-flex{
+    gap: 5px;
+}
+.btn-outline-success{
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #EEEDEB;
+}
+.btn-outline-success:hover{
+    transition-duration: 0.5s;
+    background-color: #E6B9A6;
+}
+.form-control{
+    border-radius: 10px;
+    padding: 1rem;
+}
+/* Configuração do carrossel de imagens */
+.div-images{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    font-size: 2rem;
+    background-color: #E6B9A6;
+    color: #2F3645;
+}
+
+
+
 .main-page div{
     display: flex;
     gap: 2.5rem;
@@ -45,7 +82,7 @@
     gap: 2.5rem;
     padding: 1rem;
 }
-/* 
+/*
 #2F3645
 #939185
 #E6B9A6
