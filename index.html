@@ -8,32 +8,95 @@
   </head>
   <body>
     <header>
-      <section class="header-logo">
-        <div class="logo-items">
-          <h1>PROJETO FINAL</h1>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">PROJETO FINAL</a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </section>
+      </nav>
     </header>
     <main>
-      <form>
-        <input type="button" value="Clique Aqui" onclick="msg()" />
-      </form>
-      <form>
-        <input type="button" value="Cadastre-se" onclick="cadastro()" />
-      </form>
-      <section>
-        <div>
-          Primeiro número
-          <input type="text" id="primeiro" value="1" onfocus="calculo()" />
+      <div class="main-page">
+        <form>
+          <input type="button" value="Clique Aqui" onclick="msg()" />
+        </form>
+        <form>
+          <input type="button" value="Cadastre-se" onclick="cadastro()" />
+        </form>
+        <section>
+          <div>
+            Primeiro número
+            <input type="text" id="primeiro" value="1" onfocus="calculo()" />
+          </div>
+          <div>
+            Segundo número
+            <input type="text" id="segundo" value="1" onblur="calculo()" />
+          </div>
+        </section>
+        <div class="result">
+          Resultado
+          <input id="resultado" type="text" />
         </div>
-        <div>
-          Segundo número
-          <input type="text" id="segundo" value="1" onblur="calculo()" />
-        </div>
-        <input id="resultado" type="text" />
-      </section>
+      </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="div-footer">
+        <div class="logo-redes">
+          <a href="index.html"
+            ><img src="" alt="PROJETO FINAL" height="110" width="280"
+          /></a>
+        </div>
+        <div class="redes">
+          <ul>
+            <li>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/img/facebook-icon.png"
+                  alt="Ícone do facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/img/instagram-icon.png"
+                  alt="instagram-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/img/youtube-icon.png"
+                  alt="Ícone do youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img
+                  src="./assets/img/twitter-icon.png"
+                  alt="Ícone do twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="texto">
+            Projeto de estudo desenvolvido por Diego Rezende da Coderhouse:
+            JavaScript
+          </h6>
+        </div>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

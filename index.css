@@ -1,14 +1,50 @@
 *{
     text-decoration: none;
-    background-color: #EEEDEB;
+    list-style-type: none;
+    background-color: #2F3645 ;
+    color: #EEEDEB;
+}
+.container-fluid{
+    display: grid;
+    grid-template-areas: "navbar-brand d-flex";
+}
+.main-page div{
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem;
+    background-color: #E6B9A6;
     color: #2F3645;
+}
+.d-flex{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
 }
 .header-logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.result{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
 
+.redes{
+    display: flex;
+    justify-content: right;
+}
+.redes ul{
+    display: flex;
+    gap: 2.5rem;
+    padding: 1rem;
+}
 /* 
 #2F3645
 #939185
