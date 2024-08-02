@@ -9,20 +9,36 @@
 }
 /* Layout do header da página */
 .navbar-brand{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
     color: #E6B9A6;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-header{
     display: grid;
     grid-template-areas: "navbar-brand d-flex";
     background-color: #2F3645;
     color: #E6B9A6;
+    height: 10vh;
+    width: 100vw;
 }
 .d-flex{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
     gap: 5px;
 }
 .btn-outline-success{
     border-radius: 10px;
     padding: 1rem;
+    max-width: 6rem;
+    max-height: 3rem;
     background-color: #EEEDEB;
 }
 .btn-outline-success:hover{
@@ -32,6 +48,8 @@
 .form-control{
     border-radius: 10px;
     padding: 1rem;
+    max-width: 20rem;
+    max-height: 3rem;
 }
 /* Configuração do carrossel de imagens */
 .div-images{
@@ -42,45 +60,80 @@
     background-color: #E6B9A6;
     color: #2F3645;
 }
-
-
-
-.main-page div{
-    display: flex;
-    gap: 2.5rem;
-    padding: 2rem;
+/* Configuração da main page */
+.main-page{
+    display: grid;
+    grid-template-areas: 
+    "click-here btn-js";
+    gap: 10rem;
     background-color: #E6B9A6;
     color: #2F3645;
+    justify-content: center;
+    height: 50vh;
+    max-width: 100%;
 }
-.d-flex{
-    display: flex;
-    justify-content: end;
+.click-here{
+    border-radius: 10px;
     padding: 1rem;
+    background-color: #2F3645;
+    color: #EEEDEB;
 }
-.navbar-brand{
+.btn-js{
     display: flex;
     align-items: center;
-    padding: 2rem;
-}
-.header-logo{
-    display: flex;
     justify-content: center;
+    gap: 20px;
+}
+.numbers{
+    border-radius: 10px;
+    border-color: #2F3645;
+    padding: 0.5rem;
+    background-color: #EEEDEB;
+    gap: 2.5px;
     align-items: center;
 }
 .result{
     display: flex;
     justify-content: center;
-    padding: 5px;
+    align-items: center;
+    gap: 5px;
 }
-
+.sum-calc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* configuração do layout do footer */
+.div-footer{
+    display: grid;
+    grid-template-areas: 
+    "logo-redes redes"
+    "texto redes";
+    background-color: #2F3645;
+    color: #E6B9A6;
+    height: 
+    20vh;
+    width: 100vw;
+}
 .redes{
+    grid-area: redes;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 .redes ul{
     display: flex;
     gap: 2.5rem;
     padding: 1rem;
+}
+.texto{
+    grid-area: texto;
+    display: flex;
+    align-items: end;
+}
+h6{
+    font-size: 1rem;
 }
 /*
 #2F3645

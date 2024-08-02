@@ -34,25 +34,49 @@
         </div>
       </section>
       <div class="main-page">
-        <form>
-          <input type="button" value="Clique Aqui" onclick="msg()" />
-        </form>
-        <form>
-          <input type="button" value="Cadastre-se" onclick="cadastro()" />
-        </form>
-        <section>
+        <section class="sum-calc">
           <div>
             Primeiro número
-            <input type="text" id="primeiro" value="1" onfocus="calculo()" />
+            <input
+              class="numbers"
+              type="text"
+              id="primeiro"
+              value="1"
+              onfocus="calculo()"
+            />
           </div>
           <div>
             Segundo número
-            <input type="text" id="segundo" value="1" onblur="calculo()" />
+            <input
+              class="numbers"
+              type="text"
+              id="segundo"
+              value="1"
+              onblur="calculo()"
+            />
+          </div>
+          <div class="result">
+            Resultado
+            <input class="numbers" id="resultado" type="text" />
           </div>
         </section>
-        <div class="result">
-          Resultado
-          <input id="resultado" type="text" />
+        <div class="btn-js">
+          <form>
+            <input
+              class="click-here"
+              type="button"
+              value="Clique Aqui"
+              onclick="msg()"
+            />
+          </form>
+          <form>
+            <input
+              class="click-here"
+              type="button"
+              value="Cadastre-se"
+              onclick="cadastro()"
+            />
+          </form>
         </div>
       </div>
     </main>
@@ -60,9 +84,7 @@
     <footer>
       <div class="div-footer">
         <div class="logo-redes">
-          <a href="index.html"
-            ><img src="" alt="PROJETO FINAL" height="110" width="280"
-          /></a>
+          <a href="./index.html" class="navbar-brand">PROJETO FINAL</a>
         </div>
         <div class="redes">
           <ul>
@@ -96,8 +118,8 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h6 class="texto">
+        <div class="texto">
+          <h6>
             Projeto de estudo desenvolvido por Diego Rezende da Coderhouse:
             JavaScript
           </h6>
