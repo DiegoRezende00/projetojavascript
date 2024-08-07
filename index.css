@@ -77,6 +77,11 @@
     padding: 1rem;
     background-color: #2F3645;
     color: #EEEDEB;
+    cursor: pointer;
+}
+.click-here:hover{
+    transition-duration: 0.5s;
+    background-color: #596783;
 }
 .btn-js{
     display: flex;
@@ -135,6 +140,68 @@
 h6{
     font-size: 1rem;
 }
+/* configuração produtos */
+.div-products{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.div-products img{
+    max-height: 201px;
+    max-width: 251px;
+}
+.submit-buy{
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 8rem;
+    max-height: 5rem;
+    background-color: #2F3645;
+    color: #EEEDEB;
+}
+.submit-buy:hover{
+    transition-duration: 0.5s;
+    background-color: #E6B9A6;
+    color: #2F3645;
+    cursor: pointer;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.phone1{
+    display: flex;
+    justify-content: center;
+}
+
+/* configuração DOM */
+#field-text{
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 10rem;
+    max-height: 3rem;
+    background-color: #EEEDEB;
+    color: black;
+    cursor: text;
+}
+.div-dom{
+    padding: 1rem;
+}
+.teste{
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #2F3645;
+    color: #EEEDEB;
+    cursor: pointer;
+}
+.teste:hover{
+    transition-duration: 0.5s;
+    background-color: #596783;
+}
+
 /*
 #2F3645
 #939185

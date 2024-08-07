@@ -42,3 +42,40 @@ function cadastro() {
   let desestrurar = users.nome2;
   console.log(`Olá, ${desestrurar}! Bem vindo ao nosso site.`);
 }
+
+const texto = document.getElementById("field-text");
+const save = document.getElementById("field-save");
+const view = document.getElementById("field-view");
+const clear = document.getElementById("field-clear");
+const lista = document.getElementById("lista");
+
+const armazenamento = [];
+
+save.onclick = () => {
+  armazenamento.push(texto.value);
+  console.log(armazenamento);
+  texto.value = "";
+  localStorage.setItem("armazenamento", JSON.stringify(armazenamento));
+};
+view.onclick = () => {
+  const armazenamento = JSON.parse(localStorage.getItem("armazenamento"));
+  if (armazenamento) {
+    armazenamento.forEach((texto) => {
+      const itemLista = document.createElement("li");
+      itemLista.innerText = texto;
+      lista.appendChild(itemLista);
+    });
+  }
+  console.log(lista);
+};
+clear.onclick = () => {
+  localStorage.removeItem("armazenamento");
+  lista.innerText = "";
+  armazenamento.length = 0;
+};
+
+const btnCarrinho = document.getElementById("enviar");
+
+btnCarrinho.onclick = () => {
+  console.log("Botão está funcionando!");
+};
