@@ -79,3 +79,18 @@ const btnCarrinho = document.getElementById("enviar");
 btnCarrinho.onclick = () => {
   console.log("Botão está funcionando!");
 };
+
+// APIFetch = fetch("http://servicodados.ibge.gov.br/api/v3/noticias/");
+
+// async function GETPost() {
+//   const response = await APIFetch;
+//   console.log(await response.json());
+// }
+
+// GETPost();
+
+async function GETPost() {
+  const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+  console.log(await response.json());
+}
+GETPost();
