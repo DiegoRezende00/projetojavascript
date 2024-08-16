@@ -48,7 +48,7 @@
 .form-control{
     border-radius: 10px;
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 10rem;
     max-height: 3rem;
 }
 /* Configuração do carrossel de imagens */
@@ -140,6 +140,7 @@
 }
 .redes ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 2.5rem;
     padding: 1rem;
 }

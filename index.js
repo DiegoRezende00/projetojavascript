@@ -109,7 +109,79 @@ clear.onclick = () => {
 const btnCarrinho = document.getElementById("enviar");
 
 btnCarrinho.onclick = () => {
-  console.log("Botão está funcionando!");
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
+};
+
+const btnCarrinho2 = document.getElementById("enviar2");
+
+btnCarrinho2.onclick = () => {
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
+};
+
+const btnCarrinho3 = document.getElementById("enviar3");
+
+btnCarrinho3.onclick = () => {
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
+};
+
+const btnCarrinho4 = document.getElementById("enviar4");
+
+btnCarrinho4.onclick = () => {
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
+};
+
+const btnCarrinho5 = document.getElementById("enviar5");
+
+btnCarrinho5.onclick = () => {
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
+};
+
+const btnCarrinho6 = document.getElementById("enviar6");
+
+btnCarrinho6.onclick = () => {
+  swal({
+    icon: "info",
+    title: "Adicionar ao carrinho?",
+    buttons: {
+      Confirmar: "Confirmar",
+      Cancelar: "Cancelar",
+    },
+  });
 };
 
 // APIFetch = fetch("http://servicodados.ibge.gov.br/api/v3/noticias/");
