@@ -1,13 +1,14 @@
 function msg() {
   let teste = [];
-  for (let i = 0; i < 2; i++) {
-    this.nome = prompt("Insira o nome: ");
-    this.idade = parseInt(prompt("Insira a idade: "));
-    this.work = prompt("Insira a profissão: ");
-    alert(
-      `Bem vindo, ${nome}! Você tem ${idade} anos e sua profissão é ${work}.`
-    );
-    teste.push([nome, idade, work]);
+  for (let i = 0; i < 1; i++) {
+    nome = prompt("Insira o nome: ");
+    idade = parseInt(prompt("Insira a idade: "));
+    profissao = prompt("Insira a profissão: ");
+    Toastify({
+      text: `Bem vindo ao nosso site, ${nome}!`,
+      duration: 3000,
+    }).showToast();
+    teste.push([nome, idade, profissao]);
   }
   console.log(teste);
   const spread = {
@@ -15,6 +16,23 @@ function msg() {
   };
   console.log(spread);
 }
+const identidadeTexto = document.getElementById("search-form");
+const identidadeSubmit = document.getElementById("search-button");
+const listaUsuarios = document.getElementById("lista-users");
+
+const usuarios = [];
+
+identidadeSubmit.onclick = () => {
+  usuarios.push(identidadeTexto.value);
+  console.log(usuarios);
+  if ((usuarios = true)) {
+    usuarios.forEach((identidadeTexto) => {
+      const itemLista2 = document.createElement("li");
+      itemLista2.innerText = identidadeTexto;
+      listaUsuarios.appendChild(`Bem vindo a página ${itemLista2}`);
+    });
+  }
+};
 
 function calculo() {
   let valor1 = parseInt(document.getElementById("primeiro").value);
@@ -28,19 +46,33 @@ function cadastro() {
     idade2: 1,
     cpf: 1,
   };
-  for (let i = 0; i < 1; i++) {
-    let nome2 = prompt("Insira o nome: ");
-    let idade2 = parseInt(prompt("Insira a idade: "));
-    let cpf = parseInt(prompt("Insira o cpf: "));
-    users = { nome2, idade2, cpf };
-    alert(`Bem vindo, ${nome2}!`);
-  }
+  let nome2 = prompt("Insira o nome: ");
+  let idade2 = parseInt(prompt("Insira a idade: "));
+  let cpf = parseInt(prompt("Insira o cpf: "));
+  users = { nome2, idade2, cpf };
+
+  localStorage.setItem(users, nome2);
+  const emJson = JSON.stringify(users);
+  console.log(emJson);
+
+  alert(`Bem vindo, ${nome2}!`);
+  swal({
+    icon: "warning",
+    title: "Atenção",
+    text: "Advertimos que a compra de bebida alcoólica é autorizada somente para pessoas maiores de 18 anos!",
+    buttom: {
+      Sim: "Ok",
+    },
+  });
   users.idade2 >= 18
-    ? alert("Pode comprar cerveja!")
+    ? console.log("Pode comprar cerveja!")
     : alert("Não pode comprar cerveja!");
-  console.log(users);
+
   let desestrurar = users.nome2;
   console.log(`Olá, ${desestrurar}! Bem vindo ao nosso site.`);
+
+  let container = document.getElementById("lista-users");
+  container.innerHTML = `<li>Bem vindo ao site, ${users.nome2}</li>`;
 }
 
 const texto = document.getElementById("field-text");

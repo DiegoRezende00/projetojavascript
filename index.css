@@ -71,6 +71,15 @@
     height: 50vh;
     max-width: 100%;
 }
+.div-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6B9A6;
+    color: #2F3645;
+    font-size: xx-large;
+    font-style: inherit;
+}
 .click-here{
     border-radius: 10px;
     padding: 1rem;
