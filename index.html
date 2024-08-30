@@ -21,16 +21,32 @@
               class="form-control me-2"
               id="search-form"
               type="search"
-              placeholder="Search"
+              placeholder="Usuário"
               aria-label="Search"
+              name="username"
             />
-            <button
-              id="search-button"
+            <input
+              class="form-control me-2"
+              id="search-password"
+              type="password"
+              placeholder="Senha"
+              aria-label="Search"
+              name="password"
+            />
+            <input
+              id="search-button1"
               class="btn btn-outline-success"
-              type="submit"
-            >
-              Pesquisar
-            </button>
+              type="button"
+              onclick="login()"
+              value="Entrar"
+            />
+            <input
+              id="search-button2"
+              class="btn btn-outline-success"
+              type="button"
+              onclick="login()"
+              value="Cadastre-se"
+            />
           </form>
         </div>
       </nav>
@@ -38,12 +54,11 @@
     <main>
       <section class="home-page-images">
         <div class="div-images">
-          <p class="paragrafo-home">
-            Bem vindo ao meu projeto final CODER HOUSE!
-          </p>
+          <p class="paragrafo-home">Bem vindo a minha loja virtual!</p>
         </div>
       </section>
       <div class="div-lista"><ul id="lista-users"></ul></div>
+      <div class="div-lista"><ul id="lista-users2"></ul></div>
       <div class="main-page">
         <section class="sum-calc">
           <div>
@@ -242,6 +257,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
-    <script src="index.js"></script>
+    <script src="index2.js"></script>
   </body>
 </html>

@@ -1,3 +1,23 @@
+//Login HEADER
+const identidadeTexto = document.getElementById("search-form");
+const identidadeSenha = document.getElementById("search-password");
+const identidadeSubmit = document.getElementById("search-button1");
+const listaUsuarios = document.getElementById("lista-users");
+
+const usuarios = [];
+
+function login() {
+  identidadeSubmit.onclick = () => {
+    usuarios.push(identidadeTexto.value);
+    localStorage.setItem(usuarios, identidadeTexto);
+    identidadeSenha.value = "";
+    identidadeTexto.value = "";
+    const emJson1 = JSON.stringify(usuarios);
+    let container = document.getElementById("lista-users");
+    container.innerHTML = `<li>Bem vindo ao site, ${usuarios}</li>`;
+  };
+}
+
 function msg() {
   let teste = [];
   for (let i = 0; i < 1; i++) {
@@ -16,23 +36,6 @@ function msg() {
   };
   console.log(spread);
 }
-const identidadeTexto = document.getElementById("search-form");
-const identidadeSubmit = document.getElementById("search-button");
-const listaUsuarios = document.getElementById("lista-users");
-
-const usuarios = [];
-
-identidadeSubmit.onclick = () => {
-  usuarios.push(identidadeTexto.value);
-  console.log(usuarios);
-  if ((usuarios = true)) {
-    usuarios.forEach((identidadeTexto) => {
-      const itemLista2 = document.createElement("li");
-      itemLista2.innerText = identidadeTexto;
-      listaUsuarios.appendChild(`Bem vindo a página ${itemLista2}`);
-    });
-  }
-};
 
 function calculo() {
   let valor1 = parseInt(document.getElementById("primeiro").value);
@@ -198,3 +201,5 @@ async function GETPost() {
   console.log(await response.json());
 }
 GETPost();
+
+//Consumindo ENDPOINT de produtos
