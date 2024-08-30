@@ -34,16 +34,30 @@
     padding-right: 2rem;
     gap: 5px;
 }
+.btn-outline-carrinho{
+    border-radius: 10rem;
+    padding: 1rem;
+    max-width: 8rem;
+    max-height: 3rem;
+    background-color: #EEEDEB;
+}
+.btn-outline-carrinho:hover{
+    transition-duration: 0.5s;
+    background-color: #fffc3c;
+    cursor: pointer;
+}
 .btn-outline-success{
     border-radius: 10px;
     padding: 1rem;
     max-width: 8rem;
     max-height: 3rem;
     background-color: #EEEDEB;
+    
 }
 .btn-outline-success:hover{
     transition-duration: 0.5s;
     background-color: #E6B9A6;
+    cursor: pointer;
 }
 .form-control{
     border-radius: 10px;
@@ -60,17 +74,18 @@
     background-color: #E6B9A6;
     color: #2F3645;
 }
-/* Configuração da main page */
-.main-page{
+.user-name{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10rem;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.main-page2{
+    padding: 0.5rem;
+    font-size: 2rem;
     background-color: #E6B9A6;
     color: #2F3645;
-    justify-content: center;
-    height: 50vh;
-    max-width: 100%;
 }
+/* Configuração da main page */
 .div-lista{
     display: flex;
     justify-content: center;
@@ -176,14 +191,14 @@ h6{
 }
 .submit-buy:hover{
     transition-duration: 0.5s;
-    background-color: #E6B9A6;
-    color: #2F3645;
+    background-color: #000000;
+    color: #ffffff;
     cursor: pointer;
 }
 .subtitle{
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 .phone1{
     display: flex;
