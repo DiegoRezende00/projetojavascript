@@ -167,3 +167,64 @@ h6{
 #939185
 #E6B9A6
 #EEEDEB */
+
+aside {
+    background-color: #E6B9A6;
+    width:0vw;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    transition:all ease .2s;
+    overflow-x:hidden;
+}
+
+aside.show {
+    width:30vw;
+    background-color: #E6B9A6;
+}
+
+.cart--area {
+    margin-top: 30px; /* ajuste */
+    padding:20px;
+    background-color: #E6B9A6;
+}
+
+.cart--area h1 {
+    display: relative;
+}
+@media (max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+    .pizza-area {
+        display:block;
+    }
+    .pizza-item {
+        max-width:100%;
+    }
+    header {
+        display:flex;
+    }
+    /*
+    main {
+        padding-top:60px;
+    }
+    */
+    aside {
+        width:auto;
+        position:fixed;
+        left:100vw;
+        right:0;
+        top:0;
+        bottom:0;
+        transition: all ease .2s;
+    }
+    aside.show {
+        width:auto;
+    }
+    .cart--area {
+        width:100vw;
+    }
+
+    .menu-closer {
+        display:block;
+    }
+}

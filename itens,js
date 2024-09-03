@@ -1,0 +1,44 @@
+let itensJson = [
+  {
+    id: 1,
+    name: "Iphone 12",
+    img: "./assets/iphone12.png",
+    price: 2999.0,
+    description: "Celular ultratecnologico da APPLE",
+  },
+  {
+    id: 2,
+    name: "Iphone 13",
+    img: "./assets/iphone13.png",
+    price: 3999.0,
+    description: "Celular ultratecnologico da APPLE",
+  },
+  {
+    id: 3,
+    name: "Samsung S23",
+    img: "./assets/saumsung s23.png",
+    price: 4999.0,
+    description: "Celular ultratecnologico da SAMSUNG",
+  },
+  {
+    id: 4,
+    name: "DELL INSPIRON",
+    img: "./assets/pc_dell.png",
+    price: 6.999,
+    description: "Notebook excelente para tarefas do cotidiano",
+  },
+  {
+    id: 5,
+    name: "Samsung book i5",
+    img: "./assets/pc_samsung.png",
+    price: 7999.0,
+    description: "Notebook samsung ideal para jogar FPS",
+  },
+  {
+    id: 6,
+    name: "Lenovo ideapad",
+    img: "./assets/pc_lenovo.png",
+    price: 9999.0,
+    description: "Notebook excelente para edição de videos",
+  },
+];
