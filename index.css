@@ -35,36 +35,18 @@
     gap: 5px;
 }
 .btn-outline-carrinho{
-    border-radius: 10rem;
+    border-radius: 1rem;
     padding: 1rem;
-    max-width: 8rem;
+    width: 10rem;
     max-height: 3rem;
     background-color: #EEEDEB;
 }
 .btn-outline-carrinho:hover{
     transition-duration: 0.5s;
-    background-color: #fffc3c;
+    background-color: #a6a7a8;
+    color: white;
     cursor: pointer;
-}
-.btn-outline-success{
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 8rem;
-    max-height: 3rem;
-    background-color: #EEEDEB;
-    
-}
-.btn-outline-success:hover{
-    transition-duration: 0.5s;
-    background-color: #E6B9A6;
-    cursor: pointer;
-}
-.form-control{
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 10rem;
-    max-height: 3rem;
-}
+} 
 /* Configuração do carrossel de imagens */
 .div-images{
     display: flex;
@@ -84,56 +66,6 @@
     font-size: 2rem;
     background-color: #E6B9A6;
     color: #2F3645;
-}
-/* Configuração da main page */
-.div-lista{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E6B9A6;
-    color: #2F3645;
-    font-size: xx-large;
-    font-style: inherit;
-}
-.click-here{
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: #2F3645;
-    color: #EEEDEB;
-    cursor: pointer;
-}
-.click-here:hover{
-    transition-duration: 0.5s;
-    background-color: #596783;
-}
-.btn-js{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.numbers{
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    border-color: #2F3645;
-    padding: 0.5rem;
-    background-color: #EEEDEB;
-    gap: 2.5px;
-    align-items: center;
-}
-.result{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-.sum-calc{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 /* configuração do layout do footer */
 .div-footer{

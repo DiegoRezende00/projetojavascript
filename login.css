@@ -1,0 +1,41 @@
+.sec-login{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+    padding: 5rem;
+}
+.div-login{
+    display: block;
+    padding-bottom: 1rem;
+}
+.div-btn{
+    display: block;
+    padding-top: 1rem;
+
+}
+.username{
+    display: block;
+    border-radius: 5px;
+    width: 500px;
+    padding: 5px;
+}
+.password{
+    display: block;
+    border-radius: 5px;
+    width: 500px;
+    padding: 5px;
+}
+.btn-outline-success{
+    border-radius: 5px;
+    width: 514px;
+    padding: 5px;
+    background-color: rgb(16, 129, 1);
+    color: rgb(255, 255, 255);
+}
+.btn-outline-success:hover{
+    transition: 1s;
+    background-color: rgb(119, 230, 105);
+    color: black;
+    cursor: pointer;
+}
