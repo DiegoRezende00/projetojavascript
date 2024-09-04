@@ -109,83 +109,83 @@ clear.onclick = () => {
   armazenamento.length = 0;
 };
 
-const btnCarrinho = document.getElementById("enviar");
+// const btnCarrinho = document.getElementById("enviar");
 
-btnCarrinho.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
-const btnCarrinho2 = document.getElementById("enviar2");
+// const btnCarrinho2 = document.getElementById("enviar2");
 
-btnCarrinho2.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho2.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
-const btnCarrinho3 = document.getElementById("enviar3");
+// const btnCarrinho3 = document.getElementById("enviar3");
 
-btnCarrinho3.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho3.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
-const btnCarrinho4 = document.getElementById("enviar4");
+// const btnCarrinho4 = document.getElementById("enviar4");
 
-btnCarrinho4.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho4.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
-const btnCarrinho5 = document.getElementById("enviar5");
+// const btnCarrinho5 = document.getElementById("enviar5");
 
-btnCarrinho5.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho5.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
-const btnCarrinho6 = document.getElementById("enviar6");
+// const btnCarrinho6 = document.getElementById("enviar6");
 
-btnCarrinho6.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
-};
+// btnCarrinho6.onclick = () => {
+//   swal({
+//     icon: "info",
+//     title: "Adicionar ao carrinho?",
+//     buttons: {
+//       Confirmar: "Confirmar",
+//       Cancelar: "Cancelar",
+//     },
+//   });
+// };
 
 // APIFetch = fetch("http://servicodados.ibge.gov.br/api/v3/noticias/");
 

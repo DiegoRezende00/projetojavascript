@@ -67,6 +67,13 @@
     background-color: #E6B9A6;
     color: #2F3645;
 }
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+
+}
 /* configuração do layout do footer */
 .div-footer{
     display: grid;
@@ -100,66 +107,43 @@ h6{
     font-size: 1rem;
 }
 /* configuração produtos */
-.div-products{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-    gap: 2rem;
-    font-size: 1.5rem;
-}
-.div-products img{
-    max-height: 201px;
-    max-width: 251px;
-}
-.submit-buy{
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 8rem;
-    max-height: 5rem;
-    background-color: #2F3645;
-    color: #EEEDEB;
-}
-.submit-buy:hover{
-    transition-duration: 0.5s;
-    background-color: #000000;
-    color: #ffffff;
-    cursor: pointer;
-}
-.subtitle{
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-}
-.phone1{
-    display: flex;
-    justify-content: center;
+.produtos {
+    margin: 2%;
 }
 
-/* configuração DOM */
-#field-text{
-    border-radius: 10px;
-    padding: 1rem;
-    max-width: 10rem;
-    max-height: 3rem;
-    background-color: #EEEDEB;
-    color: black;
-    cursor: text;
+.produtos__lista {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.div-dom{
-    padding: 1rem;
+
+.produtos__item {
+    flex: 0 1 calc(30% - 1rem);
+    max-width: 20rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-.teste{
-    border-radius: 10px;
+img{
+    max-width: 20rem;
+    max-height: 15rem;
+}
+.submit{
     padding: 1rem;
     background-color: #2F3645;
-    color: #EEEDEB;
+    color: aliceblue;
+    border-radius: 2rem;
     cursor: pointer;
 }
-.teste:hover{
-    transition-duration: 0.5s;
-    background-color: #596783;
+.submit:hover{
+    transition: 0.5s;
+    background-color: #5b5e66;
+}
+.cart-values{
+    border: 2px solid black;
+    padding: 5rem;
 }
 
 /*
