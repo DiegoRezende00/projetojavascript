@@ -145,6 +145,17 @@ img{
     border: 2px solid black;
     padding: 5rem;
 }
+#cart-button{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #2F3645;
+    color: aliceblue;
+}
+#cart-button:hover{
+    transition: 0.5s;
+    background-color: #5b5e66;
+    cursor: pointer;
+}
 
 /*
 #2F3645

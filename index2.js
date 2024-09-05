@@ -129,7 +129,7 @@ let itensJson = [
   },
   {
     id: 4,
-    name: "DELL INSPIRON",
+    name: "Dell Inspiron",
     img: "https://a-static.mlcdn.com.br/800x560/notebook-dell-inspiron-15-3000-intel-core-i3-4gb-128gb-ssd-156-led-windows-10/magazineluiza/227755500/1639e4b40029f26aa17353c6a9005105.jpg",
     price: 6.999,
     description: "Notebook excelente para tarefas do cotidiano",
@@ -161,9 +161,9 @@ function exibirProdutos(endpoint) {
     console.log(produto);
     elementoParaInserirProdutos.innerHTML += `
         <li class="produtos__item">
-            <div class="produtos__content">
+            <div class="produtos__content" id="produtos__content">
                 <img src="${produto.img}">
-                <div class="produtos__informacoes">
+                <div class="produtos__informacoes" id="produtos__informacoes">
                     <h3>${produto.name}</h3>
                     <p>${produto.description}
                     </p>
@@ -178,15 +178,31 @@ function exibirProdutos(endpoint) {
 }
 exibirProdutos(endpoint);
 
-const btnCarrinhoCompras = document.getElementById("submit-buy");
+let cart = [];
 
-btnCarrinhoCompras.onclick = () => {
-  swal({
-    icon: "info",
-    title: "Adicionar ao carrinho?",
-    buttons: {
-      Confirmar: "Confirmar",
-      Cancelar: "Cancelar",
-    },
-  });
+let btnCart = document.getElementById("submit-buy");
+let product = document.getElementById("produtos__informacoes");
+
+let AddCart = () => {
+  btnCart.onclick = () => {
+    cart.push(product.innerText);
+    localStorage.setItem(cart, product);
+    const emJson1 = JSON.stringify(cart);
+    let container = document.getElementById("produtos__carrinho");
+    container.innerHTML = `<li class="produtos__carrinho1" id="produtos__carrinho1">O produto, ${cart}, está no carrinho!</li>
+    <button id="cart-button">Finalizar compra</button>`;
+  };
 };
+
+AddCart();
+
+let btnCleanCart = document.getElementById("search-button2");
+let CartBox = document.getElementById("produtos__carrinho");
+
+let CleanCart = () => {
+  btnCleanCart.onclick = () => {
+    localStorage.removeItem(cart, product);
+    CartBox.remove(CartBox);
+  };
+};
+CleanCart();
