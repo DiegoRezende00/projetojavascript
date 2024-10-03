@@ -158,7 +158,6 @@ console.log(endpoint);
 
 function exibirProdutos(endpoint) {
   endpoint.forEach((produto) => {
-    console.log(produto);
     elementoParaInserirProdutos.innerHTML += `
         <li class="produtos__item">
             <div class="produtos__content" id="produtos__content">
@@ -169,7 +168,7 @@ function exibirProdutos(endpoint) {
                     </p>
                     <h4>R$ ${produto.price},00</h4>
                     <p>Frete GRÁTIS</p>
-                    <button class="submit" id="submit-buy">Adicionar ao Carrinho</button>
+                    <button class="submit" id="submit-buy" data-name="${produto.name}" data-price="${produto.price}">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </li>
@@ -178,31 +177,36 @@ function exibirProdutos(endpoint) {
 }
 exibirProdutos(endpoint);
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let btnCart = document.getElementById("submit-buy");
 let product = document.getElementById("produtos__informacoes");
 
 let AddCart = () => {
-  btnCart.onclick = () => {
-    cart.push(product.innerText);
-    localStorage.setItem(cart, product);
-    const emJson1 = JSON.stringify(cart);
-    let container = document.getElementById("produtos__carrinho");
-    container.innerHTML = `<li class="produtos__carrinho1" id="produtos__carrinho1">O produto, ${cart}, está no carrinho!</li>
+  const buttons = document.querySelectorAll(".submit");
+  buttons.forEach((button) => {
+    button.onclick = () => {
+      const productName = button.getAttribute("data-name");
+      const productPrice = button.getAttribute("data-price");
+      cart.push({ name: productName, price: productPrice });
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      let container = document.getElementById("produtos__carrinho");
+      container.innerHTML = `<li class="produtos__carrinho1" id="produtos__carrinho1">O produto, ${productName}, está no carrinho!</li>
     <button id="cart-button">Finalizar compra</button>`;
-  };
+    };
+  });
 };
 
 AddCart();
 
 let btnCleanCart = document.getElementById("search-button2");
-let CartBox = document.getElementById("produtos__carrinho");
 
 let CleanCart = () => {
   btnCleanCart.onclick = () => {
-    localStorage.removeItem(cart, product);
-    CartBox.remove(CartBox);
+    cart = [];
+    localStorage.removeItem("cart");
+    document.getElementById("produtos__carrinho").innerHTML = "";
   };
 };
 CleanCart();
